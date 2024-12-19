@@ -5,20 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Setitik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<title>Setitik</title>
 </head>
 
 <body class="bg-blue-950 text-white font-sans flex flex-col min-h-screen">
   <header class="p-6 flex justify-between items-center">
-    <a href="index.html" class="text-lg font-bold">Setitik.</a>
+    <a href="index.html" class="text-lg font-bold hover:text-yellow-400 hover:scale-105 transition-all duration-200">Setitik.</a>
     <nav>
       <ul class="flex space-x-6 text-sm">
-        <li><a href="bank.html" class="hover:underline">Bank Soal</a></li>
-        <li><a href="galeri.html" class="hover:underline">Galeri</a></li>
-        <li><a href="lomba.html" class="hover:underline">Lomba</a></li>
-        <li><a href="beasiswa.html" class="hover:underline">Beasiswa</a></li>
-        <li><a href="komunitas.html" class="hover:underline">Komunitas</a></li>
-        <li><a href="tentang.html" class="hover:underline">Tentang TIK</a></li>
+        <li><a href="bank.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Bank Soal</a></li>
+        <li><a href="galeri.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Galeri</a></li>
+        <li><a href="lomba.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Lomba</a></li>
+        <li><a href="beasiswa.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Beasiswa</a></li>
+        <li><a href="komunitas.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Komunitas</a></li>
+        <li><a href="tentang.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Tentang TIK</a></li>
       </ul>
     </nav>
   </header>
@@ -26,10 +31,31 @@
   <main class="flex-grow text-center p-8">
     <!-- Hi, Sobat TIK Section -->
     <section class="mb-16">
-      <div class="mx-auto rounded-full flex items-center justify-center">
-        <img src="logo.png" alt="Logo" class="w-48 h-48">
-      </div>
-      <h2 class="text-7xl font-bold mt-4">Hi, Sahabat <span class="text-yellow-400">TIK</span>!</h2>
+      <div class="mx-auto rounded-full flex items-center justify-center w-48 h-48 transition-transform duration-300 ease-in-out hover:scale-110"> 
+    <img src="logo.png" alt="Logo" class="w-full h-full">
+</div>
+<h2 id="hero-text" class="text-7xl font-bold mt-4 font-['Roboto']">Hi, Sahabat <span class="text-yellow-400">TIK</span>!</h2>
+<script>
+  const heroText = document.getElementById('hero-text');
+const text = heroText.textContent;
+heroText.innerHTML = ""; 
+
+let i = 0;
+const typingInterval = setInterval(() => {
+  if (i < text.length) {
+    if (text.substring(i, i + 3) === "TIK") {
+      heroText.innerHTML += '<span class="text-yellow-400">TIK</span>';
+      i += 3; // Loncat 3 karakter karena "TIK" sudah ditambahkan
+    } else {
+      heroText.innerHTML += text.charAt(i);
+      i++;
+    }
+  } else {
+    clearInterval(typingInterval);
+  }
+}, 150);
+</script>
+
     </section>
 
     <!-- Tentang Setitik Section -->
@@ -45,71 +71,72 @@
 
     <!-- Bank Soal Section -->
     <section class="m-4 grid gap-4 grid-cols-3 flex mx-auto ">
-      <div class="min-h-[100px] min-w-[150px] bg-yellow-400 text-blue-950 p-6 rounded-xl shadow-md">
-        <h3 class="text-5xl font-bold mb-6">Bank Soal</h3>
+        <div class="min-h-[100px] min-w-[150px] bg-yellow-400 text-blue-950 p-6 rounded-xl shadow-md transition-transform hover:scale-110"> 
+          <h3 class="text-5xl font-bold mb-6">Bank Soal</h3>
           <p class="text-sm leading-6 mb-6 text-justify">
-            Bank soal jurusan TIK adalah kumpulan soal yang dirancang untuk menguji pengetahuan, keterampilan, dan pemahaman siswa di bidang Teknologi Informasi dan Komunikasi. 
-            Bank soal ini mencakup berbagai materi dan topik yang relevan dengan kurikulum TIK, mulai dari konsep dasar hingga penerapan teknologi dalam dunia nyata.
+              Bank soal jurusan TIK adalah kumpulan soal yang dirancang untuk menguji pengetahuan, keterampilan, dan pemahaman siswa di bidang Teknologi Informasi dan Komunikasi. 
+              Bank soal ini mencakup berbagai materi dan topik yang relevan dengan kurikulum TIK, mulai dari konsep dasar hingga penerapan teknologi dalam dunia nyata.
           </p>
-            <a href="bank.html" class="bg-blue-950 hover:bg-blue-800 text-white px-4 py-2 rounded-full text-sm font-bold">
-              Lihat Bank Soal
-            </a>
-          </div>
+          <a href="bank.html">
+          <button class="relative -left-1 -top-1 bg-blue-950 px-5 py-2.5 font-medium uppercase text-white rounded-full transition-all before:rounded-full before:absolute before:left-1 before:top-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:left-0 hover:top-0 before:hover:left-0 before:hover:top-0">
+            Lihat Bank Soal</button>
+          </a>
+      </div>
         
-        <div class="min-h-[100px] min-w-[150px] bg-yellow-400 text-blue-950 p-6 rounded-xl shadow-md">
-          <h3 class="text-5xl font-bold mb-6">Galeri</h3>
+      <div class="min-h-[100px] min-w-[150px] bg-yellow-400 text-blue-950 p-6 rounded-xl shadow-md transition-transform hover:scale-110"> 
+        <h3 class="text-5xl font-bold mb-6">Galeri</h3>
             <p class="text-sm leading-6 mb-6 text-justify">
               Selamat datang di Galeri TIK, tempat di mana teknologi, kreativitas, dan inovasi bersatu dalam harmoni! Galeri ini bukan sekadar ruang pameran biasa,
                tetapi merupakan pengalaman interaktif yang membawa Anda menjelajahi berbagai keajaiban dunia Teknologi Informasi dan Komunikasi.
             </p>
-              <a href="galeri.html" class="bg-blue-950 hover:bg-blue-800 text-white px-4 py-2 rounded-full text-sm font-bold">
-                Lihat Galeri
+              <a href="galeri.html"> <button class="relative -left-1 -top-1 bg-blue-950 px-5 py-2.5 font-medium uppercase text-white rounded-full transition-all before:rounded-full before:absolute before:left-1 before:top-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:left-0 hover:top-0 before:hover:left-0 before:hover:top-0">
+                Lihat Galeri</button>
               </a>
             </div>     
 
-          <div class="min-h-[100px] min-w-[150px] bg-yellow-400 text-blue-950 p-6 rounded-xl shadow-md">
-            <h3 class="text-5xl font-bold mb-6">Lomba</h3>
+            <div class="min-h-[100px] min-w-[150px] bg-yellow-400 text-blue-950 p-6 rounded-xl shadow-md transition-transform hover:scale-110"> 
+              <h3 class="text-5xl font-bold mb-6">Lomba</h3>
               <p class="text-sm leading-6 mb-6 text-justify">
                 Selamat datang di pusat informasi lomba TIK yang paling lengkap dan seru! Website ini dirancang khusus untuk kamu yang bersemangat mengikuti lomba 
                 teknologi dan ingin menjadi juara. Dengan fitur-fitur yang canggih dan tampilan yang ramah pengguna, kami siap mendukung perjalananmu menuju kesuksesan.
               </p>
-                <a href="lomba.html" class="bg-blue-950 hover:bg-blue-800 text-white px-4 py-2 rounded-full text-sm font-bold">
-                  Lihat Lomba
+                <a href="lomba.html"> <button class="relative -left-1 -top-1 bg-blue-950 px-5 py-2.5 font-medium uppercase text-white rounded-full transition-all before:rounded-full before:absolute before:left-1 before:top-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:left-0 hover:top-0 before:hover:left-0 before:hover:top-0">
+                  Lihat Lomba</button>
                 </a>
               </div>   
           </section>
 
- <!-- Bank Soal Section -->
+ <!-- Beasiswa Section -->
  <section class="m-4 grid gap-4 grid-cols-3 flex mx-auto ">
-  <div class="min-h-[100px] min-w-[150px] bg-yellow-400 text-blue-950 p-6 rounded-xl shadow-md">
+  <div class="min-h-[100px] min-w-[150px] bg-yellow-400 text-blue-950 p-6 rounded-xl shadow-md transition-transform hover:scale-110"> 
     <h3 class="text-5xl font-bold mb-6">Beasiswa</h3>
       <p class="text-sm leading-6 mb-6 text-justify">
         Tempat semua informasi beasiswa terkumpul rapi dan mudah diakses! Kami hadir untuk membantu kamu, para pejuang pendidikan, menemukan peluang beasiswa terbaik untuk menggapai cita-cita di bidang Teknologi Informasi dan Komunikasi 
         (TIK) atau bidang lainnya. Yuk, jelajahi fasilitas kami yang seru dan bermanfaat! 
       </p>
-        <a href="beasiswa.html" class="bg-blue-950 hover:bg-blue-800 text-white px-4 py-2 rounded-full text-sm font-bold">
-          Lihat Beasiswa
+        <a href="beasiswa.html"> <button class="relative -left-1 -top-1 bg-blue-950 px-5 py-2.5 font-medium uppercase text-white rounded-full transition-all before:rounded-full before:absolute before:left-1 before:top-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:left-0 hover:top-0 before:hover:left-0 before:hover:top-0">
+          Lihat Beasiswa</button>
         </a>
       </div>
     
-    <div class="min-h-[100px] min-w-[150px] bg-yellow-400 text-blue-950 p-6 rounded-xl shadow-md">
-      <h3 class="text-5xl font-bold mb-6">Komunitas</h3>
+      <div class="min-h-[100px] min-w-[150px] bg-yellow-400 text-blue-950 p-6 rounded-xl shadow-md transition-transform hover:scale-110"> 
+        <h3 class="text-5xl font-bold mb-6">Komunitas</h3>
         <p class="text-sm leading-6 mb-6 text-justify">
           Komunitas TIK adalah ruang di mana ide-ide brilian bertemu, berkembang, dan menjadi nyata. Kami menghubungkan individu dengan semangat yang sama dalam mengeksplorasi teknologi, dari pemula yang baru belajar hingga profesional yang ingin berbagi ilmu dan pengalaman.
         </p>
-          <a href="komunitas.html" class="bg-blue-950 hover:bg-blue-800 text-white px-4 py-2 rounded-full text-sm font-bold">
-            Lihat Komunitas
+          <a href="komunitas.html"> <button class="relative -left-1 -top-1 bg-blue-950 px-5 py-2.5 font-medium uppercase text-white rounded-full transition-all before:rounded-full before:absolute before:left-1 before:top-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:left-0 hover:top-0 before:hover:left-0 before:hover:top-0">
+            Lihat Komunitas</button>
           </a>
         </div>     
 
-      <div class="min-h-[100px] min-w-[150px] bg-yellow-400 text-blue-950 p-6 rounded-xl shadow-md">
-        <h3 class="text-5xl font-bold mb-6">Tentang TIK</h3>
+        <div class="min-h-[100px] min-w-[150px] bg-yellow-400 text-blue-950 p-6 rounded-xl shadow-md transition-transform hover:scale-110"> 
+          <h3 class="text-5xl font-bold mb-6">Tentang TIK</h3>
           <p class="text-sm leading-6 mb-6 text-justify">
             Jurusan Teknologi Informasi dan Komunikasi (TIK) mempelajari pengembangan perangkat lunak, desain web, kecerdasan buatan, dan keamanan siber. Jurusan ini membuka peluang bagi kamu untuk berinovasi, 
             mengembangkan solusi teknologi, dan berkarier di industri digital yang terus berkembang pesat.
           </p>
-            <a href="tentang.html" class="bg-blue-950 hover:bg-blue-800 text-white px-4 py-2 rounded-full text-sm font-bold">
-              Lihat Tentang TIK
+            <a href="tentang.html"> <button class="relative -left-1 -top-1 bg-blue-950 px-5 py-2.5 font-medium uppercase text-white rounded-full transition-all before:rounded-full before:absolute before:left-1 before:top-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:left-0 hover:top-0 before:hover:left-0 before:hover:top-0">
+              Lihat Tentang TIK</button>
             </a>
           </div>   
       </section>
@@ -118,9 +145,25 @@
 
 
 <section>
-<footer class="bg-yellow-400 py-5 text-center text-blue-950 mt-12">
-  <div class="px-16">&copy; Kelompok 9 all right reserved </div>
-  
-</footer>
+  <footer class="bg-gray-800 text-white py-6 px-8">
+    <div class="container mx-auto grid grid-cols-2 gap-8">
+      <div>
+        <h4 class="text-lg font-bold mb-4">Tentang Website Ini</h4>
+        <p class="text-xs text-justify">Setitik adalah situs web yang menyediakan informasi yang berkaitan dengan jurusan TIK. Nama setitik pun memiliki arti "Seputar Berita TIK". Setitik diharapkan dapat menjadi tempat atau sarana yang bermanfaat bagi mahasiswa jurusan TIK. Inspirasi dibuatnya website ini adalah GULTIK PNJ. Fitur-fitur di website ini adalah fitur-fitur yang ada di GULTIK PNJ</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold mb-4">Kreator</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/rezrfn/profilecard/?igsh=MWl4cjdhM2h4bW80bQ==" target="_blank" class="hover:underline">Muhammad Reza Arifin</a></li>
+          <li><a href="https://www.instagram.com/mah_al_ra?igsh=MW45bGVxMTg2YWNxeQ==" target="_blank" class="hover:underline">Mahfudh Al-Rafif</a></li>
+          <li><a href="https://www.instagram.com/ysufhamzh?igsh=MXR3M3Y5N2ZnM3M3bw==" target="_blank" class="hover:underline">Yusuf Hamzah Taufiqurrahman</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-4 text-center">
+      <p>&copy; 2024 Kelompok 9. All rights reserved.</p>
+    </div>
+  </footer>
 </section>
+
 </html>

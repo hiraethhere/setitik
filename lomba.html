@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="UTF-8">
@@ -10,52 +10,188 @@
 
 <body class="bg-blue-950 text-white font-sans flex flex-col min-h-screen">
   <header class="p-6 flex justify-between items-center">
-    <a href="index.html" class="text-lg font-bold">Setitik.</a>
+    <a href="index.html" class="text-lg font-bold hover:text-yellow-400 hover:scale-105 transition-all duration-200">Setitik.</a>
     <nav>
       <ul class="flex space-x-6 text-sm">
-        <li><a href="bank.html" class="hover:underline">Bank Soal</a></li>
-        <li><a href="galeri.html" class="hover:underline">Galeri</a></li>
-        <li><a href="lomba.html" class="hover:underline">Lomba</a></li>
-        <li><a href="beasiswa.html" class="hover:underline">Beasiswa</a></li>
-        <li><a href="komunitas.html" class="hover:underline">Komunitas</a></li>
-        <li><a href="tentang.html" class="hover:underline">Tentang TIK</a></li>
+        <li><a href="bank.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Bank Soal</a></li>
+        <li><a href="galeri.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Galeri</a></li>
+        <li><a href="lomba.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Lomba</a></li>
+        <li><a href="beasiswa.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Beasiswa</a></li>
+        <li><a href="komunitas.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Komunitas</a></li>
+        <li><a href="tentang.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Tentang TIK</a></li>
       </ul>
     </nav>
   </header>
   
   <h1 class="text-4xl font font-bold px-8">Info Lomba</h1>
-<p class="mt-1.5 text-sm px-8 py-2">List Lomba <span class="text-yellow-400">TIK</span> </p>
+  <p class="mt-1.5 text-sm px-8 py-2">Daftar Lomba <span class="text-yellow-400">TIK</span> </p>
 
-<div class="container grid grid-cols-1 px-3 py-5 mx-auto space-y-4">
-<a
-  class="inline-block rounded border border-yellow-400 bg-yellow-400 px-16 py-3 text-sm font-medium text-blue-950 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-indigo-500 text-center"
-  href="https://www.instagram.com/kmipn2024_pnj?igsh=MWcwMnJmNGRqend1ZA==" target="_blank"
->
-  KIMPN VI 2024
-</a>
+  
+  <div class="container grid grid-cols-1 px-3 py-5 mx-auto space-y-4 mb-16">
 
-<a
-  class="inline-block rounded border border-yellow-400 bg-yellow-400 px-16 py-3 text-sm font-medium text-blue-950 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-indigo-500 text-center"
-  href="https://www.instagram.com/kmipn2024_pnj?igsh=MWcwMnJmNGRqend1ZA==" target="_blank"
->
-  HACKATHON
-</a>
+    <!-- Tombol: KIMPN VI 2024 -->
+    <div class="relative">
+      <button
+        class="inline-block rounded-xl border border-blue-600 bg-blue-600 px-16 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none w-full hover:text-blue-950 hover:bg-yellow-400 hover:border-yellow-400 transition-transform duration-200 hover:scale-x-105"
+        onclick="toggleDropdown('kimpn')">
+        KIMPN VI 2024
+      </button>
+      <!-- Dropdown Menu untuk KIMPN VI 2024 -->
+      <div id="kimpn" class="dropdown-content hidden absolute bg-blue-950 text-white border border-yellow-400 rounded mt-2 px-6 py-4 w-full z-10">
+        <div class="flex items-center space-x-4">
+          <img src="kmipn.jpg" alt="Gambar Acara" class="w-60 h-60 rounded-lg">
+          <div class="flex-grow">
+            <p class="text-sm mb-3">KIMPN VI 2024 adalah acara menarik yang menantang peserta untuk menunjukkan keterampilan mereka dalam berbagai bidang Teknologi dan Inovasi. Acara ini akan mempertemukan para profesional muda dan inovator untuk berkolaborasi dan menciptakan solusi-solusi baru yang dapat mengubah masa depan. Bergabunglah sekarang dan raih kesempatan untuk memenangkan hadiah menarik!</p>
+            <a href="https://www.instagram.com/kmipn2024_pnj?igsh=MWcwMnJmNGRqend1ZA==" class="inline-block rounded border border-yellow-400 bg-yellow-400 px-8 py-2 text-sm font-medium text-blue-950 hover:bg-transparent hover:text-white text-center" target="_blank">
+              Kunjungi Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
-<a
-  class="inline-block rounded border border-yellow-400 bg-yellow-400 px-16 py-3 text-sm font-medium text-blue-950 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-indigo-500 text-center"
-  href="https://www.instagram.com/kmipn2024_pnj?igsh=MWcwMnJmNGRqend1ZA==" target="_blank"
->
-  UI/UX FESTIVAL
-</a>
-</div>
+    <!-- Tombol: HACKATHON -->
+    <div class="relative">
+      <button
+        class="inline-block rounded-xl border border-blue-600 bg-blue-600 px-16 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none w-full hover:text-blue-950 hover:bg-yellow-400 hover:border-yellow-400 transition-transform duration-200 hover:scale-x-105"
+        onclick="toggleDropdown('hackathon')">
+        HACKATHON
+      </button>
+      <!-- Dropdown Menu untuk HACKATHON -->
+      <div id="hackathon" class="dropdown-content hidden absolute bg-blue-950 text-white border border-yellow-400 rounded mt-2 px-6 py-4 w-full z-10">
+        <div class="flex items-center space-x-4">
+          <img src="lomba1.jpg" alt="Gambar Acara" class="w-60 h-60 rounded-lg">
+          <div class="flex-grow">
+            <p class="text-sm mb-3 text-justify">Hackathon adalah acara di mana para penggemar teknologi dapat berkumpul, berinovasi, dan membuat solusi untuk masalah dunia nyata. Para peserta akan bekerja dalam tim untuk menghasilkan produk atau solusi inovatif. Selain itu, berbagai sesi mentoring dari ahli industri akan diberikan untuk membantu peserta. Jangan lewatkan kesempatan ini untuk meningkatkan keterampilan dan mendapatkan pengalaman yang sangat berharga!</p>
+            <a href="https://www.instagram.com/codefest.id?igsh=MTk3MmpkdGJzZHdudA==" class="inline-block rounded border border-yellow-400 bg-yellow-400 px-8 py-2 text-sm font-medium text-blue-950 hover:bg-transparent hover:text-white text-center" target="_blank">
+              Kunjungi Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <main class="flex-grow">
-    <!-- Main content here -->
+    <div class="relative">
+      <button
+        class="inline-block rounded-xl border border-blue-600 bg-blue-600 px-16 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none w-full hover:text-blue-950 hover:bg-yellow-400 hover:border-yellow-400 transition-transform duration-200 hover:scale-x-105"
+        onclick="toggleDropdown('ui')">
+        UI/UX FESTIVAL
+      </button>
+      <!-- Dropdown Menu UI -->
+      <div id="ui" class="dropdown-content hidden absolute bg-blue-950 text-white border border-yellow-400 rounded mt-2 px-6 py-4 w-full z-10">
+        <div class="flex items-center space-x-4">
+          <img src="lombaui.jpg" alt="Gambar Acara" class="w-60 h-60 rounded-lg">
+          <div class="flex-grow">
+            <p class="text-sm mb-3 text-justify">UI/UX Festival adalah perayaan desain dan pengalaman pengguna. Peserta akan memiliki kesempatan untuk menunjukkan keterampilan mereka dalam desain antarmuka pengguna (UI) dan pengalaman pengguna (UX), serta belajar dari para ahli dalam industri desain dan pengembangan produk. Ikuti festival ini untuk memperluas jaringan, menunjukkan bakat Anda, dan menangkan hadiah fantastis!</p>
+            <a href="https://www.instagram.com/lombauiux?igsh=ZHNhaDZvZXVzYmI2" class="inline-block rounded border border-yellow-400 bg-yellow-400 px-8 py-2 text-sm font-medium text-blue-950 hover:bg-transparent hover:text-white text-center" target="_blank">
+              Kunjungi Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Tombol: DESAIN -->
+    <div class="relative">
+    <button
+    class="inline-block rounded-xl border border-blue-600 bg-blue-600 px-16 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none w-full hover:text-blue-950 hover:bg-yellow-400 hover:border-yellow-400 transition-transform duration-200 hover:scale-x-105"
+    onclick="toggleDropdown('desain')">
+        DESAIN
+      </button>
+      <!-- Dropdown Menu untuk DESAIN -->
+      <div id="desain" class="dropdown-content hidden absolute bg-blue-950 text-white border border-yellow-400 rounded mt-2 px-6 py-4 w-full z-10">
+        <div class="flex items-center space-x-4">
+          <img src="desain.jpg" alt="Gambar Acara" class="w-60 h-60 rounded-lg">
+          <div class="flex-grow">
+            <p class="text-sm mb-3">Desain adalah acara yang ditujukan untuk para kreator dan inovator yang tertarik dalam dunia desain grafis dan multimedia. Acara ini memberikan kesempatan untuk berkompetisi dalam merancang berbagai produk dan solusi visual. Bergabunglah dalam acara ini dan jadilah bagian dari dunia desain yang terus berkembang!</p>
+            <a href="https://www.instagram.com/lombadesain_id?igsh=dGxoY2ZkbDFjbzg1" class="inline-block rounded border border-yellow-400 bg-yellow-400 px-8 py-2 text-sm font-medium text-blue-950 hover:bg-transparent hover:text-white text-center" target="_blank">
+              Kunjungi Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Info Lomba adalah platform yang menyajikan berbagai informasi terkini mengenai lomba-lomba dalam dunia Teknologi dan Inovasi. Dapatkan update terbaru tentang berbagai kompetisi di bidang TIK, serta informasi penting terkait dengan jadwal, persyaratan, dan cara pendaftaran. Jangan lewatkan kesempatan untuk berpartisipasi dalam lomba-lomba bergengsi!</p>
+            <a href="https://www.instagram.com/infolomba_event?igsh=MWtmdnpweXdudTg5YQ==" class="inline-block rounded border border-yellow-400 bg-yellow-400 px-8 py-2 text-sm font-medium text-blue-950 hover:bg-transparent hover:text-white text-center">
+              Kunjungi Instagram-->
+
+    <!-- Tombol: INFO LOMBA -->
+    <div class="relative">
+      <button
+      class="inline-block rounded-xl border border-blue-600 bg-blue-600 px-16 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none w-full hover:text-blue-950 hover:bg-yellow-400 hover:border-yellow-400 transition-transform duration-200 hover:scale-x-105"
+      onclick="toggleDropdown('infolomba')">
+          INFO LOMBA
+        </button>
+        <!-- Dropdown Menu untuk DESAIN -->
+        <div id="infolomba" class="dropdown-content hidden absolute bg-blue-950 text-white border border-yellow-400 rounded mt-2 px-6 py-4 w-full z-10">
+          <div class="flex items-center space-x-4">
+            <img src="infolomba.jpg" alt="Gambar Acara" class="w-60 h-60 rounded-lg">
+            <div class="flex-grow">
+              <p class="text-sm mb-3">Info Lomba adalah platform yang menyajikan berbagai informasi terkini mengenai lomba-lomba dalam dunia Teknologi dan Inovasi. Dapatkan update terbaru tentang berbagai kompetisi di bidang TIK, serta informasi penting terkait dengan jadwal, persyaratan, dan cara pendaftaran. Jangan lewatkan kesempatan untuk berpartisipasi dalam lomba-lomba bergengsi!</p>
+              <a href="https://www.instagram.com/infolomba_event?igsh=MWtmdnpweXdudTg5YQ==" class="inline-block rounded border border-yellow-400 bg-yellow-400 px-8 py-2 text-sm font-medium text-blue-950 hover:bg-transparent hover:text-white text-center" target="_blank">
+                Kunjungi Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
   </main>
 
-  <footer class="bg-yellow-400 py-5 text-center text-blue-950">
-    <div>&copy; Kelompok 9 all right reserved</div>
-  </footer>
+  <section>
+    <footer class="bg-gray-800 text-white py-6 px-8">
+      <div class="container mx-auto grid grid-cols-2 gap-8">
+        <div>
+          <h4 class="text-lg font-bold mb-4">Tentang Website Ini</h4>
+          <p class="text-xs text-justify">Setitik adalah situs web yang menyediakan informasi yang berkaitan dengan jurusan TIK. Nama setitik pun memiliki arti "Seputar Berita TIK". Setitik diharapkan dapat menjadi tempat atau sarana yang bermanfaat bagi mahasiswa jurusan TIK. Inspirasi dibuatnya website ini adalah GULTIK PNJ. Fitur-fitur di website ini adalah fitur-fitur yang ada di GULTIK PNJ</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-4">Kreator</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/rezrfn/profilecard/?igsh=MWl4cjdhM2h4bW80bQ==" target="_blank" class="hover:underline">Muhammad Reza Arifin</a></li>
+            <li><a href="https://www.instagram.com/mah_al_ra?igsh=MW45bGVxMTg2YWNxeQ==" target="_blank" class="hover:underline">Mahfudh Al-Rafif</a></li>
+            <li><a href="https://www.instagram.com/ysufhamzh?igsh=MXR3M3Y5N2ZnM3M3bw==" target="_blank" class="hover:underline">Yusuf Hamzah Taufiqurrahman</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-4 text-center">
+        <p>&copy; 2024 Kelompok 9. All rights reserved.</p>
+      </div>
+    </footer>
+  </section>
+
+  <script>
+    // Fungsi untuk toggle dropdown
+    function toggleDropdown(id) {
+      var dropdown = document.getElementById(id);
+      var buttons = document.querySelectorAll('.relative');
+      
+      // Toggle visibilitas dropdown (tampilkan/sembunyikan)
+      if (dropdown.classList.contains('hidden')) {
+        dropdown.classList.remove('hidden');
+      } else {
+        dropdown.classList.add('hidden');
+      }
+
+      // Periksa setiap tombol dan dropdown
+      buttons.forEach(function(button) {
+        var dropdownMenu = button.querySelector('.dropdown-content');
+        
+        // Jika dropdown terbuka, tambahkan margin bawah yang sesuai
+        if (dropdownMenu && !dropdownMenu.classList.contains('hidden')) {
+          var dropdownHeight = dropdownMenu.offsetHeight;  // Ambil tinggi dropdown
+          button.style.marginBottom = dropdownHeight + 'px';  // Sesuaikan margin bawah
+        } else {
+          button.style.marginBottom = '0';  // Reset margin bawah jika dropdown tertutup
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>

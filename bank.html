@@ -11,28 +11,28 @@
 
 <body class="bg-blue-950 text-white font-sans flex flex-col min-h-screen">
   <header class="p-6 flex justify-between items-center">
-    <a href="index.html" class="text-lg font-bold">Setitik.</a>
+    <a href="index.html" class="text-lg font-bold hover:text-yellow-400 hover:scale-105 transition-all duration-200">Setitik.</a>
     <nav>
       <ul class="flex space-x-6 text-sm">
-        <li><a href="bank.html" class="hover:underline">Bank Soal</a></li>
-        <li><a href="galeri.html" class="hover:underline">Galeri</a></li>
-        <li><a href="lomba.html" class="hover:underline">Lomba</a></li>
-        <li><a href="beasiswa.html" class="hover:underline">Beasiswa</a></li>
-        <li><a href="komunitas.html" class="hover:underline">Komunitas</a></li>
-        <li><a href="tentang.html" class="hover:underline">Tentang TIK</a></li>
+        <li><a href="bank.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Bank Soal</a></li>
+        <li><a href="galeri.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Galeri</a></li>
+        <li><a href="lomba.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Lomba</a></li>
+        <li><a href="beasiswa.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Beasiswa</a></li>
+        <li><a href="komunitas.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Komunitas</a></li>
+        <li><a href="tentang.html" class="hover:underline hover:text-yellow-400 hover:scale-105 transition-all duration-200">Tentang TIK</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="flex-grow text-left px-16">
+  <main class="flex-grow text-left px-16 mb-16">
     <section>
       <div class="font-bold text-white text-6xl mb-8">Bank Soal <span class="text-yellow-400">TIK</span></div>
     </section>
 
     <section class="mx-auto">
-      <div class="relative mb-10" x-data="{ open: false }">
-        <div class="font-semibold text-white text-xl mb-2">
-          <button @click="open = !open" class="min-h-[50px] min-w-[50%] bg-blue-600 rounded-xl shadow-md px-4 text-left">
+      <div class="relative mb-10 transition-transform duration-200 hover:scale-x-105 hover:translate-x-5" x-data="{ open: false }">
+        <div class="font-semibold text-white text-xl mb-2 ">
+          <button @click="open = !open" class="min-h-[50px] min-w-[50%] bg-blue-600 rounded-xl shadow-md px-4 text-left hover:text-blue-950 hover:bg-yellow-400">
             Gabungan
           </button>
         </div>
@@ -42,35 +42,35 @@
           Semester 1
         </div>
         <a href="https://docs.google.com/presentation/d/1B8iKIDX8l8f-wHDfrztsrTshyBjUmxdm/edit#slide=id.p3" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400 hover:text-blue-950 hover:bg-yellow-400">
             Algoritma & Pemrograman Dasar
           </button></a>
         <a href="https://drive.google.com/file/d/14bFiBHwPnbW9kTwLTSKZtQVFgP6VD-uN/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400 hover:text-blue-950 hover:bg-yellow-400">
             Matematika Diskrit
           </button></a>
         <a href="https://drive.google.com/file/d/1ELRskXrlXk4swuShPVPGfSLarSFF5fRk/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400 hover:text-blue-950 hover:bg-yellow-400">
             Pengantar Teknologi Informasi dan Komunikasi
           </button></a>
         <a href="https://drive.google.com/file/d/1t1gkySDkojeiAqmFECgSuEF2_yK0Zohm/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400 hover:text-blue-950 hover:bg-yellow-400">
             Pengantar Jaringan Komputer
           </button></a>
         <a href="https://drive.google.com/file/d/1jZXCc-w4xals0v3fp_g9oPmObnlASF00/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400 hover:text-blue-950 hover:bg-yellow-400">
             Pengantar/Teknologi Multimedia
           </button></a>
         <a href="https://drive.google.com/file/d/1COBnc0ymURu4ILTMm08dwy7c7EgjBLzB/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400 hover:text-blue-950 hover:bg-yellow-400">
             Bahasa Inggris untuk TIK 1
           </button></a>
         <a href="https://drive.google.com/file/d/157_J2kBBmb_LvGP2a4ckodC5dyAyxnRD/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400 hover:text-blue-950 hover:bg-yellow-400">
             Bahasa Indonesia
           </button></a>
         <a href="https://drive.google.com/file/d/1-05Q81Gy2yQgiFkMSwKjsbFZTitN2Sas/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400 hover:text-blue-950 hover:bg-yellow-400">
             Kewarganegaraan
           </button></a>
 
@@ -79,15 +79,15 @@
           Semester 2
         </div>
         <a href="https://drive.google.com/file/d/1fTfsr8V7YVPeOZBd3g7KdzSv666YwO5i/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Aljabar Linier
           </button></a>
         <a href="https://drive.google.com/file/d/1royzYLTqAQMTHOSmMdH2SBykUtFb9yRP/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Sistem Basis Data
           </button></a>
         <a href="https://drive.google.com/file/d/1ZEH-FaTleHp-K1vnXFCcD37X8TxQzN8u/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Algoritma & Struktur Data
           </button></a>
 
@@ -96,15 +96,15 @@
           Semester 3
         </div>
         <a href="https://drive.google.com/file/d/1T68QUE_tAvGvMs2qzhAgjfRdwCvof5Vt/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Pancasila
           </button></a>
         <a href="https://drive.google.com/file/d/1pCqr4-HZIHn2_837Z52Jc3qfTzM8a0Dk/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Hukum dan Etika
           </button></a>
         <a href="https://drive.google.com/file/d/1lM5n5lMCTdngV4QlN0yuTxJ_FTPmDuq7/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Rekayasa Perangkat lunak
           </button></a>
       </div>
@@ -112,9 +112,9 @@
 
     </section>
     <section class="mx-auto">
-      <div class="relative mb-10" x-data="{ open: false }">
+      <div class="relative mb-10 transition-transform duration-200 hover:scale-x-105 hover:translate-x-5" x-data="{ open: false }">
         <div class="font-semibold text-white text-xl mb-2">
-          <button @click="open = !open" class="min-h-[50px] min-w-[50%] bg-blue-600 rounded-xl shadow-md px-4 text-left">
+          <button @click="open = !open" class="min-h-[50px] min-w-[50%] bg-blue-600 rounded-xl shadow-md px-4 text-left hover:text-blue-950 hover:bg-yellow-400 hover:text-blue-950 hover:bg-yellow-400">
             Teknik Informatika
           </button>
         </div>
@@ -124,15 +124,15 @@
           Semester 1
         </div>
         <a href="https://drive.google.com/file/d/1mKau7t0FmN40M37bkpx1tVQG-hWhWxLG/view" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2  transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Sistem Operasi
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Organisasi dan Arsitektur Komputer
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Materi
           </button></a>
 
@@ -141,35 +141,35 @@
           Semester 2
         </div>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Pemrograman Berorientasi Objek
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Jaringan Komputer
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Sistem Informasi Manajemen
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Sistem Basis Data
             </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Algoritma Struktur Data
             </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Rekayasa Perangkat Lunak
             </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Metode Numerik
             </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Materi
             </button></a>
             
@@ -178,31 +178,31 @@
           Semester 3
         </div>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Analisa dan Desain Sistem Informasi
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Grafika Komputer
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Sistem Terdistribusi
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Pemrograman Web Lanjut
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Pemrograman Basis Data Lanjut
             </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Pemrograman Visual
             </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Kecerdasan Buatan
             </button></a>
 
@@ -211,43 +211,43 @@
           Semester 4
         </div>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Data Warehouse
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Image Processing/PCD
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             FrameWork Programming
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Software Quality Assurance
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Statistika dan probabilitas untuk TI
             </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Mobile Programming
             </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Sistem Pendukung Keputusan
             </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Etika dan Hukum TIK
             </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Mobile Computing
             </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Materi
             </button></a>
 
@@ -256,9 +256,9 @@
     </section>
 
     <section class="mx-auto">
-      <div class="relative mb-10" x-data="{ open: false }">
+      <div class="relative mb-10 transition-transform duration-200 hover:scale-x-105 hover:translate-x-5" x-data="{ open: false }">
         <div class="font-semibold text-white text-xl mb-2">
-          <button @click="open = !open" class="min-h-[50px] min-w-[50%] bg-blue-600 rounded-xl shadow-md px-4 text-left">
+          <button @click="open = !open" class="min-h-[50px] min-w-[50%] bg-blue-600 rounded-xl shadow-md px-4 text-left hover:text-blue-950 hover:bg-yellow-400">
             Teknik Multimedia Digital
           </button>
         </div>
@@ -268,15 +268,15 @@
           Semester 1
         </div>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Pengantar Desain Komunikasi Visual
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Pengantar Multimedia
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Materi
           </button></a>
 
@@ -285,31 +285,31 @@
           Semester 2
         </div>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Menggambar
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Desain Komunikasi Visual Lanjut
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Multimedia Lanjut
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Prinsip & Desain Animasi
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Desain UI/UX
             </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Character Building & Leadership
             </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+            <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
               Materi
             </button></a>
             
@@ -318,15 +318,15 @@
           Semester 3
         </div>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Pemodelan 3D
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Desain Web
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2  transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Materi
           </button></a>
       </div>
@@ -334,9 +334,9 @@
     </section>
     
     <section class="mx-auto">
-      <div class="relative mb-10" x-data="{ open: false }">
+      <div class="relative mb-10 transition-transform duration-200 hover:scale-x-105 hover:translate-x-5" x-data="{ open: false }">
         <div class="font-semibold text-white text-xl mb-2">
-          <button @click="open = !open" class="min-h-[50px] min-w-[50%] bg-blue-600 rounded-xl shadow-md px-4 text-left">
+          <button @click="open = !open" class="min-h-[50px] min-w-[50%] bg-blue-600 rounded-xl shadow-md px-4 text-left hover:text-blue-950 hover:bg-yellow-400">
             Teknik Multimedia Jaringan
           </button>
         </div>
@@ -346,19 +346,19 @@
           Semester 1
         </div>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Pengantar Jaringan Komputer
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Piranti Komputer
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Sistem Operasi
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Materi
           </button></a>
 
@@ -367,24 +367,24 @@
           Semester 2
         </div>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Interaksi Manusia dan Komputer
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Jaringan Komputer Lanjut
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Materi
           </button></a>
             
            <!--TMJ Semester 3-->
-        <div x-show="open" class="font-regular text-yellow-400 text-xl mb-2">
+        <div x-show="open" class="font-regular text-yellow-400 text-xl mb-2 ">
           Semester 3
         </div>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Metode Numerik
           </button></a>
   
@@ -393,9 +393,9 @@
     </section>
 
     <section class="mx-auto">
-      <div class="relative mb-10" x-data="{ open: false }">
+      <div class="relative mb-10 transition-transform duration-200 hover:scale-x-105 hover:translate-x-5" x-data="{ open: false }">
         <div class="font-semibold text-white text-xl mb-2">
-          <button @click="open = !open" class="min-h-[50px] min-w-[50%] bg-blue-600 rounded-xl shadow-md px-4 text-left">
+          <button @click="open = !open" class="min-h-[50px] min-w-[50%] bg-blue-600 rounded-xl shadow-md px-4 text-left hover:text-blue-950 hover:bg-yellow-400">
             Teknik Komputer & Jaringan
           </button>
         </div>
@@ -405,11 +405,11 @@
           Semester 2
         </div>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Pemrograman Jaringan
           </button></a>
         <a href="https://drive.google.com/drive/u/2/folders/1wFPGOA9rrceLgcObOH_Kxmzjr1lexIckk" target="_blank" x-show="open">
-          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2">
+          <button class="min-h-[50px] min-w-[75%] bg-blue-600 rounded-xl shadow-md px-4 text-left mb-2 transition-transform duration-200 hover:scale-x-105 hover:translate-x-10 hover:text-blue-950 hover:bg-yellow-400">
             Protokol Perutean
           </button></a>
 
@@ -418,9 +418,28 @@
     </section>
   </main>
 
-  <footer class="bg-yellow-400 py-5 text-center text-blue-950">
-    <div>&copy; Kelompok 9 all right reserved</div>
-  </footer>
+  <section>
+    <footer class="bg-gray-800 text-white py-6 px-8">
+      <div class="container mx-auto grid grid-cols-2 gap-8">
+        <div>
+          <h4 class="text-lg font-bold mb-4">Tentang Website Ini</h4>
+          <p class="text-xs text-justify">Setitik adalah situs web yang menyediakan informasi yang berkaitan dengan jurusan TIK. Nama setitik pun memiliki arti "Seputar Berita TIK". Setitik diharapkan dapat menjadi tempat atau sarana yang bermanfaat bagi mahasiswa jurusan TIK. Inspirasi dibuatnya website ini adalah GULTIK PNJ. Fitur-fitur di website ini adalah fitur-fitur yang ada di GULTIK PNJ</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-4">Kreator</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/rezrfn/profilecard/?igsh=MWl4cjdhM2h4bW80bQ==" target="_blank" class="hover:underline">Muhammad Reza Arifin</a></li>
+            <li><a href="https://www.instagram.com/mah_al_ra?igsh=MW45bGVxMTg2YWNxeQ==" target="_blank" class="hover:underline">Mahfudh Al-Rafif</a></li>
+            <li><a href="https://www.instagram.com/ysufhamzh?igsh=MXR3M3Y5N2ZnM3M3bw==" target="_blank" class="hover:underline">Yusuf Hamzah Taufiqurrahman</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-4 text-center">
+        <p>&copy; 2024 Kelompok 9. All rights reserved.</p>
+      </div>
+    </footer>
+  </section>
+
 </body>
 
 </html>
